@@ -1,0 +1,33 @@
+
+// Customer Document
+db.customer.insertOne({
+	name: 'Iefan'
+	email: 'mynamejeff@example.com'
+	address:{country: 'Boonei',
+		City: 'Brunei',
+		Street: '51 Wellington Street'}
+})
+
+
+// Book Document
+db.book.insertOne({
+	_id: '1234'
+	title: 'Antam sha'
+	author: 'Fahmi'
+	language: 'English'
+	isbn13: '98754654213'
+	price: 191989
+	num_pages: 132
+	publisher: 'Fahmily'
+	publication_date: Date(2022-12-12)
+})
+
+// Order Document
+db.order.insertOne({
+	book_id: '1234'
+	customer_id: <object_id>
+	order_date: ISODate('1999-12-12T12:12:12z'), 
+	shipping_address:{country: 'Boonei',
+		City: 'Brunei',
+		Street: '51 Wellington Street'}
+})
